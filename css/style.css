@@ -189,6 +189,7 @@
             background: #850d0d;
             width: 97.5%;
             transform: translateX(-110%);
+            transition: all 0.5s;
         }
         .sub_menu ul {
             flex-direction: column;
@@ -197,6 +198,6 @@
             border-top: 1px solid #f1f0cf;
         }
         #btn_menu:checked~.sub_menu {
-            transform: translateX(0);
+            transform: translateX(-1);
         }
     }
