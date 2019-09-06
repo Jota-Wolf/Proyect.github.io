@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Chilanka');
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #230338;
+}
+
+.centrarImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.centrarImg img {
+    width: 100px;
+    height: 100px;
+}
+
+.ajustarIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f1f0cf;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.textoIcon {
+    margin-top: 15px;
+    float: left;
+    width: 90%;
+    font-family: 'Chilanka', cursive;
+    font-size: 1.2rem;
+}
+
+
+/*Menu Hamburguesa*/
+
+.menu {
+    background: #850d0d;
+    width: 100%;
+}
+
+#bars {
+    color: #f1f0cf;
+}
+
+#btn_menu {
+    display: none;
+}
+
+.menu label {
+    display: none;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+}
+
+.menu label:hover {
+    cursor: pointer;
+    background: rgb(0, 0, 0, 0.3);
+}
+
+.sub_menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sub_menu li:hover {
+    background: rgb(0, 0, 0, 0.3);
+}
+
+.sub_menu li a {
+    display: block;
+    padding: 10px 30px;
+    color: #f1f0cf;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:670px) {
+    .menu label {
+        display: block;
+    }
+    .sub_menu {
+        position: absolute;
+        background: #850d0d;
+        width: 70%;
+        transform: translateX(-110%);
+    }
+    .sub_menu ul {
+        flex-direction: column;
+    }
+    .sub_menu li {
+        border-top: 1px solid #f1f0cf;
+    }
+    #btn_menu:checked~.sub_menu {
+        transform: translateX(0);
+    }
+}
