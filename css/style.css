@@ -278,6 +278,15 @@
         background-color: #d6e4aa;
     }
     
+    .main_arriendo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: 1px 1px 1px 1px #161616;
+        background-color: #eceba7;
+    }
+    
     .post {
         margin-top: 10px;
         padding-bottom: 20px;
