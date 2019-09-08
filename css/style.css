@@ -1,239 +1,303 @@
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-    background: #dfd9d9;
-}
-
-.logo-menu {
-    background: #161616;
-    color: #dfd9d9;
-}
-
-.slide-style {
-    box-shadow: 5px 5px 10px #393e46;
-}
-
-
-/* Main */
-
-.main {
-    background: #dfd9d9;
-    color: #161616;
-}
-
-.bordes {
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px #393e46;
-    margin: 15px;
-}
-
-.contenido {
-    width: 100%;
-    margin: 10px 0;
-    padding: 20px;
-    text-align: justify;
-}
-
-.foto {
-    vertical-align: top;
-    margin: 20px 0;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Chilanka');
-header {
-    background-color: #161616;
-}
-
-.centrarImg {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-}
-
-.ajustarIcon {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.ajustarIcon a {
-    text-decoration: none;
-    color: #dfd9d9;
-}
-
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.textoIcon {
-    margin: 5px;
-    float: left;
-    width: 90%;
-    font-family: 'Sunflower', sans-serif;
-}
-
-
-/* Footer */
-
-footer {
-    background: #161616;
-    color: #dfd9d9;
-}
-
-footer .nav a {
-    display: block;
-    width: 100%;
-    padding: 20px;
-    color: #dfd9d9;
-    text-decoration: none;
-    border-bottom: 1px solid #393e46;
-}
-
-.rrss {
-    height: 50px;
-    width: 50px;
-}
-
-.con_rrss {
-    display: flex;
-    margin-left: 100px;
-}
-
-footer .nav a:hover {
-    text-decoration: underline;
-}
-
-.logo-foot {
-    display: flex;
-    justify-content: center;
-    color: #dfd9d9;
-    padding: 10px;
-}
-
-.logo-pxx {
-    width: 200px;
-    height: 200px;
-}
-
-
-/* ---------------------------------------------- */
-
-html {
-    scroll-behavior: smooth;
-}
-
-.scrollup {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    background: rgb(139, 29, 14);
-    bottom: 40px;
-    right: 50px;
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    font-size: 22px;
-}
-
-
-/* ---------------------------------------------- */
-
-.menu {
-    background: #850d0d;
-    width: 100%;
-}
-
-#bars {
-    color: #f1f0cf;
-}
-
-#btn_menu {
-    display: none;
-}
-
-.menu label {
-    display: none;
-    width: 35px;
-    height: 35px;
-    padding: 10px;
-}
-
-.menu label:hover {
-    cursor: pointer;
-    background: rgb(0, 0, 0, 0.3);
-}
-
-.sub_menu {
-    z-index: 200;
-}
-
-.sub_menu ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.sub_menu li:hover {
-    background: rgb(0, 0, 0, 0.3);
-}
-
-.sub_menu li a {
-    display: block;
-    padding: 10px 30px;
-    color: #f1f0cf;
-    text-decoration: none;
-}
-
-@media only screen and (max-width:550px) {
-    .textoIcon {
-        font-size: 1.2rem;
-        margin-top: 17px;
-    }
-    .menu label {
-        display: block;
-        width: 100%;
-    }
-    #title_menu {
-        display: flex;
-        justify-content: center;
-        transform: translateY(-95%);
+    * {
         margin: 0;
         padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Raleway', sans-serif;
+        background: #dfd9d9;
+    }
+    
+    .logo-menu {
+        background: #161616;
         color: #dfd9d9;
     }
-    .sub_menu {
-        position: absolute;
+    
+    .slide-style {
+        box-shadow: 5px 5px 10px #393e46;
+    }
+    /* Main */
+    
+    .main {
+        background: #dfd9d9;
+        color: #161616;
+    }
+    
+    .bordes {
+        /* width: 70%; */
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px #393e46;
+        margin: 15px 30px;
+    }
+    
+    .contenido {
+        margin: 10px 0;
+        padding: 20px;
+        text-align: justify;
+    }
+    
+    .foto {
+        /* vertical-align: top; */
+        margin: 20px 0;
+        width: 200px;
+        height: 200px;
+    }
+    
+    aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @import url('https://fonts.googleapis.com/css?family=Chilanka');
+    header {
+        background-color: #161616;
+    }
+    
+    .centrarImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    .ajustarIcon {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .ajustarIcon a {
+        text-decoration: none;
+        color: #dfd9d9;
+    }
+    
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .textoIcon {
+        margin: 5px;
+        float: left;
+        width: 90%;
+        font-family: 'Sunflower', sans-serif;
+    }
+    /* Footer */
+    
+    footer {
+        background: #161616;
+        color: #dfd9d9;
+    }
+    
+    footer .nav a {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        color: #dfd9d9;
+        text-decoration: none;
+        border-bottom: 1px solid #393e46;
+    }
+    
+    .rrss {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .con_rrss {
+        display: flex;
+        margin: 10px 10px 10px 70px;
+        padding: 20px;
+    }
+    
+    footer .nav a:hover {
+        text-decoration: underline;
+    }
+    
+    .logo-foot {
+        display: flex;
+        justify-content: center;
+        color: #dfd9d9;
+        padding: 10px;
+    }
+    
+    .logo-pxx {
+        width: 200px;
+        height: 200px;
+    }
+    /* ---------------------------------------------- */
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    /* .scrollup {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background: rgb(139, 29, 14);
+        bottom: 40px;
+        right: 50px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        font-size: 22px;
+    } */
+    /* ---------------------------------------------- */
+    
+    .menu {
         background: #850d0d;
         width: 100%;
-        transform: translateX(-110%);
-        transition: all 0.5s;
     }
+    
+    #bars {
+        color: #f1f0cf;
+    }
+    
+    #btn_menu {
+        display: none;
+    }
+    
+    .menu label {
+        display: none;
+        width: 35px;
+        height: 35px;
+        padding: 10px;
+    }
+    
+    .menu label:hover {
+        cursor: pointer;
+        background: rgb(0, 0, 0, 0.3);
+    }
+    
+    .sub_menu {
+        z-index: 200;
+    }
+    
     .sub_menu ul {
-        flex-direction: column;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
     }
-    .sub_menu li {
-        border-top: 1px solid #f1f0cf;
+    
+    .sub_menu li a:hover {
+        color: #ffffff;
     }
-    #btn_menu:checked~.sub_menu {
-        transform: translateX(-1%);
+    
+    .sub_menu li a {
+        display: block;
+        padding: 10px 30px;
+        color: #cabebe;
+        text-decoration: none;
     }
-    footer .nav a {
-        text-align: center;
+    
+    @media only screen and (max-width:665px) {
+        .textoIcon {
+            font-size: 1.2rem;
+            margin-top: 17px;
+        }
+        .menu label {
+            display: block;
+            width: 100%;
+        }
+        .centrarImg {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #title_menu {
+            display: flex;
+            justify-content: center;
+            transform: translateY(-95%);
+            margin: 0;
+            padding: 0;
+            color: #dfd9d9;
+        }
+        .sub_menu {
+            position: absolute;
+            background: #850d0d;
+            width: 100%;
+            transform: translateX(-110%);
+            transition: all 0.5s;
+        }
+        .sub_menu ul {
+            flex-direction: column;
+        }
+        .sub_menu li {
+            border-top: 1px solid #f1f0cf;
+        }
+        #btn_menu:checked~.sub_menu {
+            transform: translateX(-1%);
+        }
+        footer .nav a {
+            text-align: center;
+        }
+        .con_rrss {
+            transform: translateX(-8%);
+        }
     }
-    .con_rrss {
-        margin-right: 80px;
+    /* Post */
+    
+    .main {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
-}
+    
+    .main_casas {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: 1px 1px 1px 1px #161616;
+        background-color: #f1f0cf;
+    }
+    
+    .main_depto {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: 1px 1px 1px 1px #161616;
+        background-color: #d1eecc;
+    }
+    
+    .main_terreno {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: 1px 1px 1px 1px #161616;
+        background-color: #d6e4aa;
+    }
+    
+    .post {
+        margin-top: 10px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #161616;
+    }
+    
+    .post .post-title a {
+        color: #333;
+    }
+    
+    .post .thumb {
+        margin-right: 10px;
+        width: 40%;
+    }
+    
+    .post .thumb img {
+        width: 100%;
+    }
+    
+    .post .contenedor-botones {
+        width: 100%;
+    }
