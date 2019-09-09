@@ -202,7 +202,7 @@
         text-decoration: none;
     }
     
-    @media only screen and (max-width:665px) {
+    @media only screen and (max-width:620px) {
         .textoIcon {
             font-size: 1.2rem;
             margin-top: 17px;
@@ -245,6 +245,9 @@
         }
         .con_rrss {
             transform: translateX(-8%);
+        }
+        form {
+            width: 100%;
         }
     }
     /* Post */
@@ -314,4 +317,59 @@
     
     .post .contenedor-botones {
         width: 100%;
+    }
+    /*Formulario*/
+    
+    .formulario {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    form {
+        width: 450px;
+        margin: auto;
+        background: rgb(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    #tit_form {
+        text-align: center;
+        color: #dfd9d9;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #dfd9d9;
+    }
+    
+    #tit_form h1 {
+        background: #ec9b3b;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+    }
+    
+    textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    
+    #enviar {
+        background: #d6e4aa;
+        padding: 20px;
+    }
+    
+    #enviar:hover {
+        cursor: pointer;
+        background: #64b2cd;
     }
