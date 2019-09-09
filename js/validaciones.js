@@ -36,7 +36,7 @@ function validarTelefono() {
     var telefono = document.getElementById("telefono").value;
     var txtTelefono = document.getElementById("telefono");
 
-    if (telefono == null || telefono.length == 0 || !(isNaN)) {
+    if (telefono == null || telefono.length == 0 || isNaN(telefono)) {
         alert('ERROR: Debe escribir un numero de Telefono');
         txtTelefono.classList.add('error');
         txtTelefono.classList.remove('exito');
