@@ -354,7 +354,6 @@
         padding: 7px;
         box-sizing: border-box;
         font-size: 17px;
-        border: none;
     }
     
     textarea {
@@ -372,4 +371,12 @@
     #enviar:hover {
         cursor: pointer;
         background: #64b2cd;
+    }
+    
+    .error {
+        border-bottom: 5px solid #993333;
+    }
+    
+    .exito {
+        border-bottom: 5px solid #2ecc71;
     }

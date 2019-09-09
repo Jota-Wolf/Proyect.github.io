@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/flexboxgrid.min.css">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Proyecto Web v5</title>
 </head>
 
@@ -74,18 +75,17 @@
 
 
         <!-- CONTENIDO -->
-        <section class=" container-fluid row formulario">
+        <section class=" formulario">
 
-            <form action="#" method="POST">
+            <form name="form1" action="#" method="post">
                 <div id="tit_form">
                     <h1>Formulario de Contacto</h1>
                 </div>
-
-                <input type="text" name="nombre" placeholder="Ingrese Nombre">
-                <input type="text" name="correo" placeholder="Ingrese Correo">
-                <input type="tel" name="fono" placeholder="Ingrese Telefono">
-                <textarea name="mensaje" placeholder="Escriba su Mensaje" cols="30" rows="10"></textarea>
-                <input type="submit" value="Enviar" id="enviar">
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre" onblur="validarNombre();">
+                <input type="text" id="mail" name="correo" placeholder="Ingrese Correo" onblur="validarCorreo();">
+                <input type="number" id="telefono" name="telefono" placeholder="Ingrese Telefono" onblur="validarTelefono();">
+                <textarea name="mensaje" id="mensaje" placeholder="Escriba su Mensaje" cols="30" rows="10" onblur="validarMensaje();"></textarea>
+                <input type="button" value="Enviar" onclick="validarFormulario();">
             </form>
         </section>
 
@@ -133,6 +133,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/validaciones.js" type="text/javascript"></script>
 </body>
 
 </html>
