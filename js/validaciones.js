@@ -66,7 +66,7 @@ function validarMensaje() {
 function validarFormulario() {
     validarNombre();
     validarCorreo();
-    validarMensaje();
     validarTelefono();
+    validarMensaje();
 
 }
