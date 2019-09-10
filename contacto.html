@@ -77,7 +77,7 @@
         <!-- CONTENIDO -->
         <section class=" formulario row container-fluid">
 
-            <form action="#" method="post">
+            <form action="#" method="post" onsubmit="return validarFormulario()">
                 <div id="tit_form">
                     <h1>Formulario de Contacto</h1>
                 </div>
@@ -85,7 +85,7 @@
                 <input type="text" id="mail" name="correo" placeholder="Ingrese Correo" onblur="validarCorreo();">
                 <input type="number" id="telefono" name="telefono" placeholder="Ingrese Telefono" onblur="validarTelefono();">
                 <textarea name="mensaje" id="mensaje" placeholder="Escriba su Mensaje" cols="30" rows="10" onblur="validarMensaje();"></textarea>
-                <input type="button" value="Enviar" onclick="validarFormulario();">
+                <input type="submit" value="Enviar">
             </form>
         </section>
 
@@ -134,6 +134,7 @@
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/validaciones.js" type="text/javascript"></script>
+    <script src="js/validar.js" type="text/javascript"></script>
 </body>
 
 </html>
